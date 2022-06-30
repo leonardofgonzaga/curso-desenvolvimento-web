@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Teclado</title>
+    <script>
+
+        function acaoOnKeyDown() {
+            alert('Evento onekeydown disparado')
+        }
+
+        function acaoOnKeyPress() {
+            alert('Evento onekeypress disparado')
+        }
+
+        function acaoOnKeyUp() {
+            alert('Evento onekeyup disparado')
+        }
+
+    </script>
+    <style>
+        label {
+            display: block;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <label for="onkeydown">onkeydown()</label>
+        <input onkeydown="acaoOnKeyDown()" type="text" id="onkeydown">
+    </div>
+    
+    <div>
+        <label for="onkeypress">onkeypress()</label>
+        <input onkeypress="acaoOnKeyPress()" type="text" id="onkeypress">
+    </div>
+    
+    <div>
+        <label for="onkeyup">onkeyup()</label>
+        <input onkeyup="acaoOnKeyUp()" type="text" id="onkeyup">
+    </div>   
+    
+</body>
+</html>

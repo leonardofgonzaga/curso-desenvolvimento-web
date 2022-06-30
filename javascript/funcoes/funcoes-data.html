@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Datas</title>
+    <script>
+
+        var data = new Date()
+
+        document.write(
+            data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear() + '<br><br>'
+        )
+
+        // Adicionar ou remover dias
+        document.write('<h3>Adicionar ou remover dias</h3>')
+        document.write(data.toString())
+        data.setDate(data.getDate() + 720)
+        document.write('<hr/>')
+        document.write(data.toString())
+        
+        // Adicionar ou remover meses
+        document.write('<h3>Adicionar ou remover meses</h3>')
+        document.write(data.toString())
+        data.setMonth(data.getMonth() + 2)
+        document.write('<hr/>')
+        document.write(data.toString())
+        
+        // Adicionar ou remover anos
+        document.write('<h3>Adicionar ou remover anos</h3>')
+        document.write(data.toString())
+        data.setFullYear(data.getFullYear() + 2)
+        document.write('<hr/>')
+        document.write(data.toString())
+
+        document.write('<h3>Cálculo de diferença entre 2 datas</h3>')
+
+        var data1 = new Date(2022, 2, 22)
+        var data2 = new Date(2022, 02, 31)
+
+        document.write('Data 1: ' + data1.toString() + '<br>')
+        document.write('Data 2: ' + data2.toString() + '<br><br>') 
+
+        document.write('Data 1 (milissegundos): ' + data1.getTime() + '<br>')
+        document.write('Data 2 (milissegundos): ' + data2.getTime() + '<br><br>')
+
+        var msEntreDatas = data2.getTime() - data1.getTime()
+        var msPorDia = (1*24*60*60*1000)
+
+        document.write(
+            'A diferença entre as datas é de ' + Math.round(msEntreDatas / msPorDia) + ' dia(s).'
+        ) 
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

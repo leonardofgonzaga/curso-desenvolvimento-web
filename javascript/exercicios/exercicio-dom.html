@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <script>
+        
+        function acaoOnFocus() {
+            document.getElementById('input-text').style.backgroundColor = 'yellow'
+        }
+
+        function acaoOnBlur() {
+            var valor = document.getElementById('input-text').value
+
+            if (valor.length < 3) {
+                document.getElementById('input-text').style.backgroundColor = 'red'
+            } else {
+                document.getElementById('input-text').style.backgroundColor = 'green'
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="input-text" onfocus="acaoOnFocus()" onblur="acaoOnBlur()" type="text">
+</body>
+</html>

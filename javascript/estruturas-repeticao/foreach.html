@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreach</title>
+    <script>
+
+        var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+
+        console.log(listaFuncionarios)
+
+        var func = function(valor, indice, array) {
+            console.log('Índice: ' + indice + ' | valor: ' + valor)
+
+            if (valor == 'Lucas') {
+                array[indice] = 'Um novo valor'
+            }
+        }
+
+        listaFuncionarios.forEach(func)           
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

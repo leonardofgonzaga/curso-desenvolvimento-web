@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio While</title>
+    <script>
+        var multiplicando = 1
+        var multiplicador = 1
+
+        while (multiplicador <= 10) {
+
+            multiplicando = 1;
+
+            while (multiplicando <= 10) {
+                console.log(multiplicador + ' x ' + multiplicando + ' = ' + multiplicador * multiplicando);
+                document.write(multiplicador + ' x ' + multiplicando + ' = ' + multiplicador * multiplicando + '<br>');
+                multiplicando++;
+            }
+
+            console.log("\n");
+            document.write("<hr/>");
+            multiplicador++;
+        }
+    </script>    
+</head>
+<body>
+    
+</body>
+</html>
